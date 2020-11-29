@@ -53,4 +53,4 @@ Você também pode ativar o mode de depuração de erros no mesmo arquivo `.env`
 
 ## Teste
 
-Agora se tudo estiver correto, basta acessar a URL: http://localhost:8080/ e será exibido um belo `Hello Word!`, na página temos uma NavBar com os links disponíveis.
+Agora se tudo estiver correto, basta acessar a URL: http://localhost:8080/ e será exibida a página de login, onde você pode se cadastrar e acessar o site.
