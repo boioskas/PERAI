@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:visited{
+    color: inherit;
+ }
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 3rem;
+    background:rgb(145, 60, 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 100;
+}
+
+nav{
+    display: flex;
+}
+
+nav ul{
+    list-style-type: none;
+    user-select: none;
+    display: flex;
+    overflow-y: hidden;
+}
+
+nav .circle{
+    height: 5rem;
+    width: 5rem;
+    margin: 0.4rem;
+    border: solid 1px rgba(0, 0, 0, 0.514);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+nav div.add::before {
+    content: "+";
+    margin-bottom: 0.4rem;
+    font-size: 6rem;
+    padding-top: 0.2rem;
+  }
+
+hr{
+    margin: 0.2rem 0 0.8rem;
+    opacity: 50%;
+}
+
+main{
+  flex: 1;
+  overflow: scroll;
+}
+
+main .title-container{
+    position: sticky;
+    height: 3.8rem;
+    z-index: 1;
+    background: white;
+    top: 0;
+}
+
+main .title-section{
+    height: 3.5rem;
+    border-radius: 5px;
+    border: black 1px solid;
+    margin: 0 2.3rem 2.3rem;
+    display: flex;
+    align-items: center;
+}
+
+main .title-section p{
+    font-size: 2.4rem;
+    text-align: center;
+    flex: 1;
+}
+
+main .title-section i{
+    font-size: 2.4rem;
+    width: 3rem;
+    margin: 0 0.4rem;
+    text-align: center;
+}
+
+main .title-section input{
+    height: 3.5rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    display: none;
+    flex: 1;
+}
+
+main{
+    overflow-x: hidden;
+}
+
+main .channel{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(145, 60, 145, 0.205);
+    align-items: center;
+    border: 1px black solid;
+    height: 16rem;
+    margin: 0.4rem 1.2rem;
+    position: relative;
+    
+}
+
+
+main .channel p{
+    margin: 0.5rem 1.2rem;
+    display: block;
+    font-weight: 300;
+    font-size:  2.4rem;
+}
+
+main .channel div.line{
+    height: 0.2rem;
+    width: 4rem;
+    background-color: rgb(145, 60, 145);
+}
+
+main .channel div.description p{
+    font-size: 1.4rem;
+    text-align: justify;
+    font-style: italic;
+}
+
+main .channel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+main .channel-lesson{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+main .comment-section{
+    height: 2rem;
+    width: 93.5%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+main .comment-section label{
+    opacity: 80%;
+    font-size: 1.6rem;
+}
+
+main .comment-section textarea{
+    height: 100%;
+    width: 100%;
+}
+
+main .channel-content{
+    background: rgba(145, 60, 145, 0.205);
+    flex: 3;
+    min-height: 50rem;
+    margin: 0.4rem 1.2rem;
+    position: relative;
+    font-size: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main .channel-content button{
+    width: 6rem;
+    height: 3rem;
+    margin: 0 0.2rem;
+
+    background: rgba(255, 255, 255, 0.411);
+    border: black 1px solid;
+}
+
+main .channel-content div:first-of-type{
+    min-height: 100%;
+}
+
+main .channel-container .archive-container{
+    border: 1px rgba(0, 0, 0, 0.767) solid;
+    border-radius: 0.5rem;
+    margin:  0.5rem 1.2rem;
+    display: none;
+    align-items: center;  
+    flex-direction: column;   
+}
+
+main .channel-container .archive{
+    width: 95%;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    height: 20px;
+    background: rgba(145, 60, 145, 0.205);
+
+}
+
+@media(min-width: 700px){
+
+    ::-webkit-scrollbar {
+        width: 16px;
+      }
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        box-shadow: inset 0 0 10px 10px rgba(145, 60, 145, 0.205);
+        border: solid 7px transparent;
+    
+    
+      }
+      ::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 10px 10px rgba(145, 60, 145, 0.795); 
+        border-radius: 10px;
+        border: solid 6.5px transparent;
+      }
+
+      .container{
+          display: grid;
+          height: 100vh;
+          grid-template-columns: 7.4rem 1fr;
+          grid-template-rows: 5vh 95vh;
+          grid-template-areas:
+          'header header'
+          'nav main';
+          overflow: hidden;
+      }
+
+      header{
+          grid-area: header;
+          padding-left: 6rem;
+      }
+      .nav{
+          grid-area: nav;
+          overflow-y: scroll;
+          overflow-x: hidden;
+      }
+
+      .nav hr{
+          display: none;
+      }
+
+      .nav nav ul{
+          display: flex;
+          flex-direction: column;
+      }
+
+      main{
+          grid-area: main;
+      }
+
+      main .channel-container-home{
+            display: grid;
+            margin: 0 3rem;
+            grid-template-columns: 1fr 1fr;
+       }
+
+         main .channel{
+            border-radius: 0.5rem;
+        }
+
+        main .comment-section{
+            width: 98.1%;
+        }
+
+        main .channel-lesson{
+            flex-direction: row;
+        }
+
+        main .channel-container .archive-container{
+            border: 1px black solid;
+            border-radius: 0.5rem;
+            display: none;
+            align-items: center;  
+            flex-direction: column;
+            flex: 1;
+            margin: 0 1.2rem 0 0;
+        }
+
+        main .channel-content button{
+           position: absolute;
+           right: 0.3rem;
+           bottom: 0.5rem;
+        }
+     
+    }
+
+
+main .channel-content{
+    text-align: left;
+    margin: 0 1.2rem;
+    padding: 1rem 0.2rem;
+    padding-top: 0.5rem;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+main .index-container{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .index-container .home-text{
+    font-size: 5rem;
+    opacity: 30%;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+footer{
+    background: rgb(145, 60, 145);
+    height: 1.2rem;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .form{
+    z-index: 1;
+    position: absolute;
+    width: 35rem;
+    text-align: center;
+}
+
+.login .form i{
+    z-index: 1;
+    color: #ccc;
+    font-size: 6.5rem;
+    margin-bottom: 3rem;
+
+}
+
+.login .signup-form{
+    display: none;
+}
+
+.login .form .user-input{
+    width: 35rem;
+    height: 5.5rem;
+    margin-bottom: 3rem;
+    outline: none;
+    border: none;
+    background: #c4c4c4;
+    color: black;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.login form .options-01{
+    margin-bottom: 5rem;
+}
+
+.login form .options-01 input{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.login form .options-01 .remember-me{
+    font-size: 1.4rem;
+    display: flex;
+    float: left;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login form .options-01 a{
+    font-size: 1.4rem;
+    font-style: italic;
+    float: right;
+}
+
+.login .form .btn{
+    outline: none;
+    border: none;
+    width: 32rem;
+    height: 5.5rem;
+    background:rgb(145, 60, 145);
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.login form .options-02{
+    font-size: 1.4rem;
+    margin-top: 3rem;
+}
+
+.login form .options-02 a{
+    color: rgb(145, 60, 145);
+}
