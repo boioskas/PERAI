@@ -13,7 +13,7 @@ Após o terminar de baixar, execute o comando `composer update` no diretorio cri
 Você pode utilizar o servidor de testes do próprio CodeIgniter utilizando o comando `php spark serve`, mas se preferir, pode ser usado algum servidor Web, como o Apache, IIS etc. 
 
 
-**Lembrando que o host deve ser apostado para o diretório '/public' da aplicação**
+**Lembrando que o host deve ser apontado para o diretório '/public' da aplicação**
 
 Mais detalhes na [documentação oficial do code igniter 4](https://codeigniter4.github.io/userguide/).
 
