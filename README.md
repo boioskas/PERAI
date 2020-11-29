@@ -1,57 +1,56 @@
-# CodeIgniter 4 Framework
+# PROJETO PERAI
 
-## What is CodeIgniter?
+## O que é o PERAI?
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible, and secure. 
-More information can be found at the [official site](http://codeigniter.com).
+A pandemia em que nos encontramos atualmente nos colocou em uma situação em que as vias e métodos de aprendizado à distância tiveram que ser a principal forma de ensino. Porém, através desta mudança súbita na rotina dos alunos e dos professores pudemos perceber que não estamos devidamente preparados para toda essa mudança, e isso exige um esforço em conjunto para que os alunos possam ter acesso a uma plataforma  onde ele possa rever e efetuar segmentos recuperativos e reforços educacionais de matérias que possuem mais dificuldade e, Além disso ter materiais de referencia que tenham disponibilidade não só durante o tempo do curso, mas também, tenha disponibilidade para os formandos, para que possam reforçar e compartilhar seus conhecimentos com alunos atuais e outros formandos.  Acreditamos que criando uma comunidade ativa de alunos e formandos conseguiremos usufruir ao máximo da capacidade de ensino dos professores e de aprendizado dos alunos. Sendo assim, surgiu nosso projeto, O PERAI.
 
-This repository holds the distributable version of the framework,
-including the user guide. It has been built from the 
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Testando a Aplicação
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+Baixe o projeto ou clone em um diretório de sua preferência.
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/). 
+Após o terminar de baixar, execute o comando `composer update` no diretorio criado para atualizar os repositorios do projeto.
 
+Você pode utilizar o servidor de testes do próprio CodeIgniter utilizando o comando `php spark serve`, mas se preferir, pode ser usado algum servidor Web, como o Apache, IIS etc. 
+
+
+**Lembrando que o host deve ser apontado para o diretório '/public' da aplicação**
+
+Mais detalhes na [documentação oficial do code igniter 4](https://codeigniter4.github.io/userguide/).
+
+
+## Setup
+
+Copie o arquivo `env` para `.env` e personalize seu aplicativo, especificamente a baseURL
+e quaisquer configurações do banco de dados.
 
 ## Important Change with index.php
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+O `index.php` não está mais na raiz do projeto! Foi movido para dentro da pasta * public *,
+para melhor segurança e separação de componentes.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+Isso significa que você deve configurar seu servidor da Web para "apontar" para a pasta * public * do seu projeto e
+não para a raiz do projeto. Uma prática melhor seria configurar um host virtual para apontar para lá. Uma prática ruim seria apontar o servidor da Web para a raiz do projeto e esperar inserir * public /...*, como o restante de sua lógica e
+estrutura são expostos.
 
-**Please** read the user guide for a better explanation of how CI4 works!
-The user guide updating and deployment is a bit awkward at the moment, but we are working on it!
+## Base de Dados
 
-## Repository Management
+Use o script db_perai.sql para criar a base de dados que é utilizada no projeto.
 
-We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+No arquivo `.env` descomente os campos e insira as informações de conexão do seu Banco de dados
 
-This repository is a "distribution" one, built by our release preparation script. 
-Problems with it can be raised on our forum, or as issues in the main repository.
+```
+database.default.hostname = localhost
+database.default.database = ci4tutorial
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQLi
+```
 
-## Contributing
+## Mode de debug
 
-We welcome contributions from the community.
+Você também pode ativar o mode de depuração de erros no mesmo arquivo `.env`, basta alterar a linha `# CI_ENVIRONMENT = production` para `CI_ENVIRONMENT = development`
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/contributing.md) section in the development repository.
 
-## Server Requirements
+## Teste
 
-PHP version 7.2 or higher is required, with the following extensions installed: 
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+Agora se tudo estiver correto, basta acessar a URL: http://localhost:8080/ e será exibido um belo `Hello Word!`, na página temos uma NavBar com os links disponíveis.
