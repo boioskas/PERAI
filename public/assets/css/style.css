@@ -319,6 +319,11 @@ main .channel-container .archive{
            right: 0.3rem;
            bottom: 0.5rem;
         }
+
+        video{
+            width: 40rem;
+            height: 20rem;
+        }
      
     }
 
@@ -374,10 +379,6 @@ footer{
     font-size: 6.5rem;
     margin-bottom: 3rem;
 
-}
-
-.login .signup-form{
-    display: none;
 }
 
 .login .form .user-input{
@@ -437,4 +438,10 @@ footer{
 
 .login form .options-02 a{
     color: rgb(145, 60, 145);
+}
+
+video{
+    margin-top: 20px;
+    width: 30rem;
+    height: 15rem;
 }

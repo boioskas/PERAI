@@ -17,8 +17,8 @@
         <header>
             <a href="/homepage">
                 <div>Perai</div>
-                <a class="sair" href="/logout">Sair</a>
             </a>
+            <a class="sair" href="/logout">Sair</a>
         </header>
         <div class="nav">
             <nav>
@@ -35,9 +35,10 @@
         <main>
             <div class="title-container">
                 <div class="title-section">
-                    <a href="/server"><i class="fas fa-arrow-left"></i></a>
+                    <a href="/addserver"><i class="fas fa-arrow-left"></i></a>
                     <p>Javascript</p>
                     <input type="text">
+                    <i></i>
                 </div>
             </div>
 
@@ -46,29 +47,28 @@
                 <div class="channel-lesson">
                     <div class="channel-content">
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mus lacus, ex risus cras quisque
-                                mattis vivamus porttitor libero, torquent placerat imperdiet nibh varius congue tempor
-                                cubilia. Felis accumsan molestie ultrices class et dui eros turpis nibh etiam, fusce
-                                sagittis nam tincidunt efficitur duis ante cursus eget, justo pellentesque elit
-                                elementum
-                                dis consectetur dolor condimentum netus. Litora penatibus orci platea morbi laoreet
-                                pharetra
-                                per duis, egestas gravida quisque conubia ridiculus dolor porta, curae euismod
-                                suspendisse
-                                placerat felis donec iaculis. Commodo suspendisse odio penatibus eros tristique torquent
-                                gravida bibendum sem, euismod enim dictum nunc nisi risus dictumst aenean, accumsan dui
-                                sociosqu eleifend primis est vivamus himenaeos. Neque pretium porta senectus maximus
-                                magna
-                                pulvinar aenean parturient tristique, tellus molestie accumsan vel at velit curae.
-                                Ullamcorper quisque nisl justo sed dolor eros quam tellus, eleifend mi vel sagittis
-                                pharetra
-                                montes cursus efficitur, inceptos cubilia rhoncus et eget lectus fermentum. Odio
-                                suscipit
-                                accumsan proin eros erat sit rhoncus suspendisse, eleifend ridiculus consequat quam
-                                rutrum
-                                conubia est tempor posuere, etiam faucibus tortor class ultricies turpis habitasse.</p>
+                            <p>Veja na sala de aula Javascript todos os conceitos dessa linguagem de programação, para
+                                que o
+                                aluno tenho formação completa em nosso curso, revisando todas as partes que aprendeu na
+                                aula. Neste curso de JavaScript aprenderemos conceitos básicos e as principais funções
+                                dessa linguagem. Para isso usaremos um formulário de pedidos para uma pizzaria, no qual
+                                será possível adicionar os sabores de pizza que desejamos comprar. Outra funcionalidade
+                                que veremos é o envio do formulário, pois este pedido precisa ser encaminhado para o
+                                servidor. Criaremos essa aplicação utilizando apenas JavaScript, sem nenhum framework.
+                            </p>
+                            <br />
+                            <p>Neste curso de JavaScript aprenderemos conceitos básicos e as principais funções dessa
+                                linguagem. Para isso usaremos um formulário de pedidos para uma pizzaria, no qual será
+                                possível adicionar os sabores de pizza que desejamos comprar. Outra funcionalidade que
+                                veremos é o envio do formulário, pois este pedido precisa ser encaminhado para o
+                                servidor. Criaremos essa aplicação utilizando apenas JavaScript, sem nenhum framework.
+                            </p>
+                            <video controls>
+                                <source src="https://youtu.be/q6ULdD4FeNk" type="video/mp4">
+                            </video>
+
                         </div>
-                        <button onclick="joinServer()">Entrar</button>
+                        <button class="entrar" onclick="joinServer()">Entrar</button>
 
                     </div>
                 </div>
@@ -85,7 +85,6 @@
         </main>
     </div>
     <script src="./assets/js/script.js"></script>
-    <?php?>
 </body>
 
 </html>

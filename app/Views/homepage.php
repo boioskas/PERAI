@@ -15,7 +15,8 @@
 <body>
     <div class="container">
         <header>
-            <div>Perai</div>
+            <div>Perai
+            </div>
             <a class="sair" href="/logout">Sair</a>
         </header>
         <div class="nav">
@@ -38,8 +39,7 @@
 
         </main>
     </div>
-    <script src="../assets/js/script.js"></script>
-    <?php?>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

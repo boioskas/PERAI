@@ -17,8 +17,8 @@
         <header>
             <a href="/homepage">
                 <div>Perai</div>
-                <a class="sair" href="/logout">Sair</a>
             </a>
+            <a class="sair" href="/logout">Sair</a>
         </header>
         <div class="nav">
             <nav>
@@ -48,30 +48,43 @@
             <div class="channel-container-home">
                 <a href="/iniciante">
                     <div class="channel">
-                        <p>Iniciantes</p>
+                        <p>Introdução</p>
                         <div class="line"></div>
                         <div class="description">
-                            <p>Um texto ai bora escrever porque tudo que vai pro D&D nao volta po Cthulhu ele sai volta
-                                bate fica volta vai e volta denovo mas isso tuo fica no DUngeons Worlds é , É ISSO AI
+                            <p>Ao longo do curso desenvolvemos uma lista de pedidos para um website chamado Hello Pizza.
+                                Nesta lista será possível escolher as quantidades de cada sabor de pizza a serem
+                                compradas.
                             </p>
                         </div>
                     </div>
                 </a>
                 <div class="channel">
-                    <p>Intermediarios</p>
+                    <p>Manipulando Elementos</p>
                     <div class="line"></div>
                     <div class="description">
-                        <p>Aqui você ja consegue fazer umas jogatinas de Magic boladas, abandonando os pokemons e os
-                            deuses do egipcio para entrar nesse magnifico mundo magico de valorant
+                        <p>Um desenvolvedor JavaScript precisa entender como manipular elementos do HTML para tornar as
+                            páginas mais dinâmicas e interativas para o usuário. Nesta aula será dado o passo inicial
+                            para a manipulação desses elementos.
                         </p>
                     </div>
                 </div>
                 <div class="channel">
-                    <p>Avançados</p>
+                    <p>Executando o código</p>
                     <div class="line"></div>
                     <div class="description">
-                        <p>Chegamos no nivel hard, se você conseguir sobrevier aqui pde ter certeza que platinar dark
-                            souls vai ser izi izi para você, isso aqui é hardicori
+                        <p>Até agora testamos o código JavaScript no console. Em um ambiente real devemos salvar este
+                            código em um arquivo e hospedá-lo em um servidor, assim o navegador do cliente poderá fazer
+                            o download destes arquivos possibilitando a visualização da página.
+                        </p>
+                    </div>
+                </div>
+                <div class="channel">
+                    <p>Tipos de dados</p>
+                    <div class="line"></div>
+                    <div class="description">
+                        <p>A nossa aplicação depende da realização de cálculos para exibir o total que o cliente irá
+                            pagar pela compra, mas para aprender a calcular valores é necessário entender o tipo string
+                            que representa um texto e o tipo number que representa um número.
                         </p>
                     </div>
                 </div>
@@ -79,7 +92,6 @@
         </main>
     </div>
     <script src="./assets/js/script.js"></script>
-    <?php?>
 </body>
 
 </html>

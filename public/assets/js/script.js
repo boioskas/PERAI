@@ -32,7 +32,6 @@ function joinServer() {
     div.appendChild(sigla)
 
     serverNav.appendChild(server)
-
 }
 
 function HandleRegisterDisplay() {

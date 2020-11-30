@@ -17,8 +17,8 @@
         <header>
             <a href="/homepage">
                 <div>Perai</div>
-                <a class="sair" href="/logout">Sair</a>
             </a>
+            <a class="sair" href="/logout">Sair</a>
         </header>
         <div class="nav">
             <nav>
@@ -38,7 +38,7 @@
             <div class="title-container">
 
                 <div class="title-section">
-                    <a href="/server"><i class="fas fa-arrow-left"></i></a>
+                    <a href="/homepage"><i class="fas fa-arrow-left"></i></a>
                     <p>Servidores</p>
                     <input type="text">
                     <a onclick="handleTitleSearchButton()"><i class="fas fa-search search"></i></a>
@@ -51,8 +51,10 @@
                         <p>JavaScript</p>
                         <div class="line"></div>
                         <div class="description">
-                            <p>Vem ca amiguinho, vamo te ensinar uns javascript bolado aqui, pode ter certeza, você vai
-                                sair daqui sabendo tudo do ES7 e mais um pouco, pode vir hheheheheehehehehehe
+                            <p>Veja na sala de aula Javascript todos os conceitos dessa linguagem de programação, para
+                                que o
+                                aluno tenho formação completa em nosso curso, revisando todas as partes que aprendeu na
+                                aula.
                             </p>
                         </div>
                     </div>
@@ -61,7 +63,6 @@
         </main>
     </div>
     <script src="./assets/js/script.js"></script>
-    <?php?>
 </body>
 
 </html>
